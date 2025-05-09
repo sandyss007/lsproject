@@ -31,7 +31,7 @@ Enter minimum energy threshold:
 
 after choosing the type of interactions the results will be saved in the final_output2.txt which contains only the particular type of interaction information tht the user has choosen.
 
-i ran the code for N2 conformer by taking NO2_N2.log file as input ,after running the script i got 4 output files. They were interactions2.txt,extracted_data2.txt,lncN2.txt and final_output2.txt.
+i ran the code for N2 conformer by taking NO2_N2.log file as input, and internally the script takes N2.pdb as input file too(in line 266) .After running the script i got 4 output files. They were interactions2.txt,extracted_data2.txt,lncN2.txt and final_output2.txt.
 
 interactions2.txt contains information about all the type of interactions .
 
@@ -41,4 +41,4 @@ lncN2.txt contains the information about the type of interaction along with the 
 
 final_output2.txt  contains only the particular type of interaction having the energy which are more than the threshold energy set by user.
 
-
+If the user wants to check for other conformers then changes need to be done are open the script go to line 266 change the pdb file for which the user wants to check(input new pdb file ) and run the script.
